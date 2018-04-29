@@ -1,6 +1,6 @@
 # Primal-Dual Interior-Point Solver for SOCPs
 
-The following code implements a primal-dual interior-point solver to find the optimal solution to general second-order cone optimization problems of the form
+The following code is based on the writings in a PhD thesis by Alexander Domahidi titled "Methods and Tools for Embedded Optimization and Control", ETH Zurich, 2013. It solves general second-order cone programs of the form
 
 ```
 min  c'x
@@ -8,7 +8,7 @@ s.t. Ax = b
      Gx <= h
 ```
 
-where `<=` is a generalized inequality such that `h - Gx` belongs to a cone `K`. A test case is given in `run_test.m`, which provides test data and makes a call to the main optimization algorithm in `PDIP_solver.m`
+by implementing a modified primal-dual Mehrotra predictor-corrector interior-point algorithm for second-order conic optimization problems, using Nesterov-Todd scaling and self-dual embedding. Where `<=` is a generalized inequality such that `h - Gx` belongs to a cone `K`. A test case is given in `run_test.m`, which provides test data and makes a call to the main optimization algorithm in `PDIP_solver.m`.
 
 ## File descriptions:
 * `run_test.m`: provides test data and calls PDIP_solver.m in order to find optimal solution to the problem
