@@ -5,7 +5,7 @@ The following code implements a primal-dual interior-point solver to find the op
 ```
 min c'x
 s.t. Ax = b
-Gx <= h
+     Gx <= h
 ```
 
 where <= is a generalized inequality such that h - Gx belongs to a cone K. A test case is given in run_test.m, which provides test data and makes a call to conic_primal_dual_interior_point_solver.m
