@@ -1,6 +1,6 @@
-# Primal-Dual Interior-Point Solver for Second-Order Cone Optimization Problems
+# Primal-Dual Interior-Point Solver for SOCPs
 
-The following code implements a primal-dual interior-point solver to find the optimal solution to general second-order cone programs of the form
+The following code implements a primal-dual interior-point solver to find the optimal solution to general second-order cone optimization problems of the form
 
 ```
 min  c'x
