@@ -8,7 +8,7 @@ s.t. Ax = b
      Gx <= h
 ```
 
-Where `<=` is a generalized inequality such that `h - Gx` belongs to a cone `K`. It implements a modified primal-dual Mehrotra predictor-corrector interior-point algorithm for second-order conic optimization problems, using Nesterov-Todd scaling and self-dual embedding. A test case is given in `run_test.m`, which provides test data and makes a call to the main optimization algorithm in `PDIP_solver.m`.
+Where `<=` is a generalized inequality such that `h - Gx` is contained in the cone `K`. It implements a modified primal-dual Mehrotra predictor-corrector interior-point algorithm for second-order conic optimization problems, using Nesterov-Todd scaling and self-dual embedding. A test case is given in `run_test.m`, which provides test data and makes a call to the main optimization algorithm in `PDIP_solver.m`.
 
 ## File descriptions:
 * `run_test.m`: provides test data and calls PDIP_solver.m in order to find optimal solution to the problem
