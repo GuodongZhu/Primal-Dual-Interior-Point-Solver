@@ -8,8 +8,7 @@ Gx <= h
 
 where <= is a generalized inequality such that h - Gx belongs to a cone K. A test case is given in run_test.m, which provides test data and makes a call to conic_primal_dual_interior_point_solver.m
 
-File descriptions:
-------------------
+# File descriptions:
 1) run_test.m: provides test data and calls PDIP_solver.m in order to find optimal solution to the problem
 2) PDIP_solver.m: main optimization algorithm used to solve generalized second-order cone programs
 3) soc_dot.m: cone product operator for second-order cones (similar to dot product for vectors)
