@@ -1,5 +1,7 @@
 # Primal-Dual Interior-Point Solver for SOCPs
 
+This is a project that I completed between January and March 2018.
+
 The following code is based on the PhD thesis by Alexander Domahidi titled "Methods and Tools for Embedded Optimization and Control", ETH Zurich, 2013. It solves general second-order cone programs of the form
 
 ```
