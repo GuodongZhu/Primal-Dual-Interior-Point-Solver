@@ -14,7 +14,7 @@ Where `<=` is a generalized inequality such that `h - Gx` is contained in the co
 
 ## File descriptions:
 * `run_test.m`: provides test data and calls `PDIP_solver.m` in order to find an optimal solution to the test problem
-* `PDIP_solver.m`: main optimization algorithm that is used to solve generalized second-order cone programs
+* `PDIP_solver.m`: main primal-dual interior-point optimization algorithm that is used to solve generalized second-order cone programs
 * `soc_dot.m`: cone product operator for second-order cones (similar to dot product for vectors)
 * `soc_dot_inv.m`: inverse to the cone product operator for second-order cones
 * `w_soc.m`: computes Nesterov-Todd scaling matrix, which allows for long steps along search direction
